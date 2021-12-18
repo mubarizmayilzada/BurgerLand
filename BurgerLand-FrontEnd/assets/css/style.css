@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: white;
+  text-decoration: none;
+  display: inline-block; }
+  a:hover {
+    color: #fff; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #000; }
+
+li {
+  list-style: none; }
+
+.container-custom {
+  margin: 0 auto;
+  width: 1180px; }
+
+@keyframes floatThings {
+  0% {
+    transform: translateY(0px); }
+  10% {
+    transform: translateY(2px); }
+  20% {
+    transform: translateY(6px); }
+  30% {
+    transform: translateY(10px); }
+  40% {
+    transform: translateY(13px); }
+  50% {
+    transform: translateY(15px); }
+  60% {
+    transform: translateY(13px); }
+  70% {
+    transform: translateY(10px); }
+  80% {
+    transform: translateY(6px); }
+  90% {
+    transform: translateY(3px); }
+  100% {
+    transform: translateY(0px); } }
+
+header {
+  background-color: transparent;
+  padding: 10px 0;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  z-index: 9999; }
+  header .header-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; }
+    header .header-content-wrapper .header-logo {
+      letter-spacing: -2px; }
+      header .header-content-wrapper .header-logo p {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 35px;
+        color: white; }
+      header .header-content-wrapper .header-logo span {
+        font-weight: 700;
+        font-size: 35px;
+        color: #FFBA00; }
+    header .header-content-wrapper nav {
+      color: white;
+      font-size: 17px;
+      font-weight: 400; }
+      header .header-content-wrapper nav ul {
+        display: flex;
+        list-style: none; }
+        header .header-content-wrapper nav ul li {
+          margin-right: 25px;
+          margin-left: 25px; }
+          header .header-content-wrapper nav ul li a:hover, header .header-content-wrapper nav ul li a:focus, header .header-content-wrapper nav ul li a:active {
+            color: #FFBA00; }
+
+main .main-section-home {
+  padding: 100px 0 100px 0;
+  display: flex;
+  justify-content: space-between; }
+  main .main-section-home__img img {
+    width: 480px; }
+    main .main-section-home__img img:hover {
+      animation: floatThings 2s linear infinite; }
+  main .main-section-home__content {
+    padding-left: 90px;
+    padding-top: 50px; }
+    main .main-section-home__content h2 {
+      font-size: 62px;
+      line-height: 55px;
+      font-weight: 700;
+      letter-spacing: -4px;
+      position: relative;
+      padding-bottom: 70px;
+      color: white; }
+      main .main-section-home__content h2::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 4px;
+        width: 130px;
+        background-color: #FFBA00;
+        margin-bottom: 40px; }
+    main .main-section-home__content p {
+      color: silver;
+      margin-bottom: 35px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400; }
+    main .main-section-home__content .slogan-main-home {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px; }
+      main .main-section-home__content .slogan-main-home h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: white; }
+        main .main-section-home__content .slogan-main-home h3 i {
+          font-size: 40px;
+          color: #FFBA00;
+          display: block;
+          padding: 10px 10px 10px 0; }
+        main .main-section-home__content .slogan-main-home h3 span {
+          display: inline-block;
+          margin: 8px 0; }
+
+.mini-ads-cards {
+  display: flex;
+  justify-content: space-between; }
+  .mini-ads-cards .mini-ads-card {
+    display: flex;
+    width: 371px;
+    height: 122px;
+    background-color: red;
+    border-radius: 11px;
+    overflow: hidden; }
+    .mini-ads-cards .mini-ads-card:nth-child(1) {
+      background-color: #FFBA00; }
+    .mini-ads-cards .mini-ads-card:nth-child(2) {
+      background-color: #007936; }
+    .mini-ads-cards .mini-ads-card:nth-child(3) {
+      background-color: #cc3433; }
+    .mini-ads-cards .mini-ads-card__img {
+      width: 40%;
+      position: relative;
+      overflow: hidden; }
+      .mini-ads-cards .mini-ads-card__img img {
+        position: absolute;
+        bottom: -20px;
+        left: -30px;
+        width: 140px; }
+    .mini-ads-cards .mini-ads-card__content {
+      width: 60%;
+      padding: 20px; }
+      .mini-ads-cards .mini-ads-card__content h2 {
+        font-size: 24px;
+        font-weight: 700px;
+        color: white;
+        margin-bottom: 4px; }
+      .mini-ads-cards .mini-ads-card__content p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: white; }
+      .mini-ads-cards .mini-ads-card__content a {
+        color: #FFBA00;
+        font-size: 18px;
+        margin-top: 5px; }
+      .mini-ads-cards .mini-ads-card__content__buy {
+        color: black !important; }
+
+.btn-main {
+  padding: 18px 38px;
+  background-color: #FFBA00;
+  border-radius: 3px;
+  font-size: 17px;
+  line-height: 100%;
+  font-weight: 500;
+  color: #000; }
+  .btn-main:hover {
+    color: #000; }

@@ -1,0 +1,35 @@
+@keyframes floatThings{
+    0%{
+        transform: translateY(0px);
+    }
+    10%{
+        transform: translateY(2px);
+    }
+    20%{
+        transform: translateY(6px);
+    }
+    30%{
+        transform: translateY(10px);
+    }
+    40%{
+        transform: translateY(13px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    60%{
+        transform: translateY(13px);
+    }
+    70%{
+        transform: translateY(10px);
+    }
+    80%{
+        transform: translateY(6px);
+    }
+    90%{
+        transform: translateY(3px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
