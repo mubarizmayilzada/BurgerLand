@@ -1,0 +1,74 @@
+.products{
+    .product-cards{
+        display: flex;
+        align-content: center;
+        justify-items: center;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 80px 0;
+        padding: 0 60px;
+        .product-card{
+            width: 275px;
+            padding: 25px;
+            margin: 0 10px;
+            border: 1px solid #ffbb0093;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            &__img{
+                height: 217px;
+                border-radius: 30px;
+                background-color: rgb(32, 32, 32);
+                width: 100%;
+                position: relative;
+                margin-bottom: 30px;
+                transition: background-color .4s ease;
+                &:hover{
+                    background-color: #FFBA00;
+                }
+                img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 155px;
+                    &:hover{
+                            width: 170px;
+                    }
+                }
+            }
+            &__body{
+                h2{
+                    font-size: 24px;
+                    font-weight: 600;
+                    letter-spacing: -2px;
+                    line-height: 24px;
+                    color: white;
+                    margin-bottom: 20px;
+                }
+                p{
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: rgb(192, 192, 192);
+                }
+                .price-order{
+                    width: 180px;
+                    display: flex;
+                    justify-content: space-between;
+                    color: #FFBA00;
+                    .price{
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 20px;
+                    }
+                    .order{
+                        font-size: 15px;
+                        line-height: 20px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

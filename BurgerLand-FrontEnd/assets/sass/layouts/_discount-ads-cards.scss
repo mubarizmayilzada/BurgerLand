@@ -1,0 +1,50 @@
+.discount-ads-cards{
+    margin: 120px 0;
+    display: flex;
+    .discount-ads-card{
+        border: 1px solid #ffbb004b;
+        width: 575px;
+        height: 280px;
+        border-radius: 11px;
+        background-color: rgb(23, 23, 23);
+        display: flex;
+        align-items: center;
+        &:not(:last-child){
+            margin-right: 15px;
+        }
+        .discount-ads-description{
+            padding: 30px 0 30px 30px;
+            width: 60%;
+            h2{
+                color: white;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 24px;
+                margin-bottom: 15px;
+            }
+            p{
+                color: rgb(192, 192, 192);
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+            a{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #FFBA00;
+            }
+        }
+        .discount-ads-img{
+            width: 40%;
+            padding: 30px 30px 30px 0;
+            img{
+                width: 100%;
+                &:hover{
+                    animation: floatThings 2s linear infinite;
+                }
+            }
+        }
+    }
+}

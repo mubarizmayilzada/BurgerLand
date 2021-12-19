@@ -16,21 +16,9 @@ main{
                 padding-top: 50px;
             h2{
                 font-size: 62px;
+                letter-spacing: -4px;
                 line-height: 55px;
                 font-weight: 700;
-                letter-spacing: -4px;
-                position: relative;
-                padding-bottom: 70px;
-                color: white;
-                &::before{
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    height: 4px;
-                    width: 130px;
-                    background-color: #FFBA00;
-                    margin-bottom: 40px;
-                }
             }
             p{
                 color: rgb(192, 192, 192);

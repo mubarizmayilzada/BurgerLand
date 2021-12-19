@@ -1,0 +1,40 @@
+.mini-information{
+    display: flex;
+    margin-bottom: 80px;
+    &__img{
+        width: 50%;
+        margin-right: 20px;
+        img{
+            width: 100%;
+            border-radius: 11px;
+        }
+    }
+    &__description{
+        width: 50%;
+        margin-left: 20px;
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(192, 192, 192);
+            margin-bottom: 23px;
+        }
+        .quality-slogan{
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 23px;
+            ul{
+                li{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: rgb(192, 192, 192);
+                    span{
+                        color: #FFBA00;
+                    }
+                }
+            }
+        }
+    }
+}
