@@ -407,3 +407,14 @@ main .main-section-home {
     .filter-buttons li:hover {
       color: black;
       background-color: #FFBA00; }
+
+.video-wrapper {
+  position: relative; }
+  .video-wrapper video {
+    width: 100%;
+    height: 100%; }
+  .video-wrapper .section-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
