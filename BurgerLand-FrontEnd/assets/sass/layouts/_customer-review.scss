@@ -1,0 +1,73 @@
+.customer-review-wrapper{
+    background-color: rgb(32, 32, 32);
+    padding: 100px 0;
+    margin-bottom: 80px;
+    .customer-review{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li{
+                background-color: black;
+                border-radius: 11px;
+                width: 373px;
+                padding: 30px;
+                p{
+                    color: rgb(192, 192, 192);
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    margin-bottom: 25px;
+                }
+                .review{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .customer{
+                        display: flex;
+                    }
+                    &__img{
+                        img{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            margin-right: 20px;
+                        }
+                    }
+                    &__about{
+                        align-items: center;
+                        position: relative;
+                        strong{
+                            margin-top: 9px;
+                            white-space: nowrap;
+                            color: white;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 27px;
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                        }
+                        span{
+                            margin-bottom: 9px;
+                            position: absolute;
+                            bottom: 0;
+                            display: block;
+                            color: rgb(192, 192, 192);
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: 21px;
+                        }
+                    }
+                    &__icon{
+                        i{
+                            font-size: 60px;
+                            color: #FFBA00;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

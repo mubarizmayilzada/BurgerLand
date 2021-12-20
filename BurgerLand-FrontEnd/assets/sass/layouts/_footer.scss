@@ -1,0 +1,115 @@
+footer{
+    padding: 80px 0;
+    background-color: black;
+    .footer{
+        display: flex;
+        &__logo{
+            width: 315px;
+            margin-right: 40px;
+            .footer-about{
+                color: white;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 400;
+                margin-top: 20px;
+            }
+        }
+        &__pages{
+            width: 230px;
+            h2{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 35px;
+                color: white;
+                margin-bottom: 15px;
+            }
+            ul{
+                li{
+                    line-height: 35px;
+                    a{
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        color: white;
+                        &:hover{
+                            color: #FFBA00;
+                        }
+                    }
+                }
+            }
+        }
+        &__about{
+            width: 275px;
+            ul{
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 35px;
+                    }
+                    h2{
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 35px;
+                        color: white;
+                        margin-bottom: 15px;
+                    }
+                    span{
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        color: white;
+                        i{
+                            margin-right: 5px;
+                            font-size: 16px;
+                            color: #FFBA00;
+                        }
+                    }
+                }
+            }
+        }
+        &__social{
+            ul{
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 35px;
+                    }
+                    h2{
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 35px;
+                        color: white;
+                        margin-bottom: 15px;
+                    }
+                    span{
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        color: white;
+                        i{
+                            margin-right: 5px;
+                            font-size: 16px;
+                            color: #FFBA00;
+                        }
+                    }
+                    .social-links{
+                        height: 0px;
+                        display: flex;
+                        li{
+                            &:not(:last-child){
+                                margin-right: 30px;
+                            }
+                            a{
+                                i{
+                                    font-size: 20px;
+                                    color: #FFBA00;
+                                    &:hover{
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
