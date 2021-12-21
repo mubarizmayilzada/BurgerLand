@@ -128,13 +128,8 @@ header {
       display: none; }
       header .header-content-wrapper .mobile-menu .burger-menu {
         margin-right: 10px; }
-      header .header-content-wrapper .mobile-menu .hide {
-        display: none;
-        right: -300px; }
-      header .header-content-wrapper .mobile-menu .show {
-        display: none;
-        right: 0; }
       header .header-content-wrapper .mobile-menu ul {
+        border: 1px solid rgba(0, 0, 0, 0.377);
         width: 250px;
         background-color: #FFBA00;
         height: 100vh;
@@ -595,7 +590,7 @@ main .main-section-home {
     width: 100% !important;
     display: block !important;
     text-align: center;
-    padding: 30px; }
+    padding: 28px; }
     .mobile-app__description .download-ways img {
       margin-bottom: 15px !important;
       width: 100% !important; } }
@@ -772,6 +767,27 @@ main .main-section-home {
           font-size: 16px;
           margin-right: 10px; }
 
+@media screen and (max-width: 1025px) {
+  .subscribe .subscribe-wrapper {
+    display: block !important;
+    text-align: center; }
+    .subscribe .subscribe-wrapper__slogan {
+      width: 100% !important;
+      margin-bottom: 25px; }
+    .subscribe .subscribe-wrapper form {
+      justify-content: center;
+      width: 100% !important; }
+      .subscribe .subscribe-wrapper form button {
+        margin-left: 15px !important; } }
+
+@media screen and (max-width: 426px) {
+  .subscribe .subscribe-wrapper form {
+    display: block !important; }
+    .subscribe .subscribe-wrapper form input {
+      width: 100% !important; }
+    .subscribe .subscribe-wrapper form button {
+      margin-top: 15px; } }
+
 footer {
   padding: 80px 0;
   background-color: black; }
@@ -849,6 +865,29 @@ footer {
         color: #FFBA00; }
         footer .footer__social ul li .social-links li a i:hover {
           color: white; }
+
+@media screen and (max-width: 769px) {
+  .footer {
+    display: block !important; }
+    .footer__logo {
+      width: 100% !important;
+      margin-bottom: 50px !important;
+      padding-bottom: 50px !important;
+      border-bottom: 1px solid white; }
+    .footer__pages {
+      width: 100% !important;
+      margin-bottom: 50px !important;
+      border-bottom: 1px solid white;
+      padding-bottom: 50px !important; }
+    .footer__about {
+      width: 100% !important;
+      padding-bottom: 50px !important;
+      margin-bottom: 50px !important;
+      border-bottom: 1px solid white; }
+    .footer__social {
+      padding-bottom: 50px !important;
+      width: 100% !important;
+      border-bottom: 1px solid white; } }
 
 .btn-main {
   padding: 18px 38px;

@@ -54,15 +54,16 @@ header{
             .burger-menu{
                 margin-right: 10px;
             }
-            .hide{
-                display: none;
-                right: -300px;
-            }
-            .show{
-                display: none;
-                right: 0;
-            }
+            // .hide{
+            //     display: none;
+            //     right: -300px;
+            // }
+            // .show{
+            //     display: none;
+            //     right: 0;
+            // }
             ul{
+                border: 1px solid rgba(0, 0, 0, 0.377);
                 width: 250px;
                 background-color: #FFBA00;
                 height: 100vh;

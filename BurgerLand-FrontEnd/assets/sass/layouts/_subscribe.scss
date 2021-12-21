@@ -52,3 +52,42 @@
         }
     }
 }
+
+@media screen and (max-width: 1025px) {
+    .subscribe{
+        .subscribe-wrapper{
+            display: block !important;
+            text-align: center;
+            &__slogan{
+                width: 100% !important;
+                margin-bottom: 25px;
+            }
+            form{
+                justify-content: center;
+                width: 100% !important;
+                button{
+                    margin-left: 15px !important;
+                }
+            }
+        }
+            
+    }   
+}
+
+
+@media screen and (max-width: 426px) {
+    .subscribe{
+        .subscribe-wrapper{
+            form{
+                display: block !important;
+                input{
+                    width: 100% !important;
+                }
+                button{
+                    margin-top: 15px;
+                }
+            }
+        }
+            
+    }   
+}
