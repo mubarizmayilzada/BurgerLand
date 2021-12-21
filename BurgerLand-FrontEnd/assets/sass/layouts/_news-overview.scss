@@ -61,3 +61,28 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1025px) {
+    .news-overview{
+        .news-cards{
+            .news-card{
+                padding: 10px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .news-overview{
+        .news-cards{
+            display: block !important;
+            .news-card{
+                width: 100% !important;
+                &:not(:last-child){
+                    margin-bottom: 30px !important;
+                }
+            }
+        }
+    }
+}

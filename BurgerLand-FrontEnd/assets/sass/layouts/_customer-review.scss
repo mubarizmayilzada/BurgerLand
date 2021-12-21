@@ -71,3 +71,22 @@
         }
     }
 }
+
+
+
+
+@media screen and (max-width: 1025px) {
+    .customer-review-wrapper{
+        .customer-review{
+            ul{
+                display: block !important;
+                li{
+                    width: 100% !important;
+                    &:not(:last-child){
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

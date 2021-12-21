@@ -63,3 +63,66 @@
         }
     }
 }
+
+
+@media screen and (max-width: 769px) {
+    .mobile-app{
+        display: block !important;
+        &__img{
+            width: 100% !important;
+            text-align: center;
+            img{
+                width: 250px !important;
+            }
+        }
+        &__description{
+            width: 100% !important;
+
+            .mobile-presents{
+                li{
+                    width: 100% !important;
+                }
+            }
+        }           
+    }   
+}
+
+@media screen and (max-width: 376px) {
+    .mobile-app{
+        display: block !important;
+        &__img{
+            width: 100% !important;
+            text-align: center;
+            img{
+                width: 150px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .mobile-app{
+        &__description{
+            .mobile-presents{
+                li{
+                    display: block !important;
+                    text-align: center;
+                    .mobile-present-icon{
+                        margin: 0 !important;
+                        margin-bottom: 15px !important;
+                    }
+                }
+            }
+            .download-ways{
+                width: 100% !important;
+                display: block !important;
+                text-align: center;
+                padding: 30px;
+                img{
+                    margin-bottom: 15px !important;
+                    width: 100% !important;
+                }
+            }
+        }      
+    }
+}
