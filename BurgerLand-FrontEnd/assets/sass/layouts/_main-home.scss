@@ -59,7 +59,6 @@ main{
     .mini-ads-card{
         display: flex;
         width: 371px;
-        height: 122px;
         background-color: red;
         border-radius: 11px;
         overflow: hidden;
@@ -106,6 +105,18 @@ main{
             }
             &__buy{
                 color: black !important; 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .mini-ads-cards{
+        display: block;
+        .mini-ads-card{
+            width: 100% !important;
+            &:not(:last-child){
+                margin-bottom: 20px;
             }
         }
     }

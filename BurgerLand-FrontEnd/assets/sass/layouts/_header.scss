@@ -88,6 +88,13 @@ header{
     }
 }
 
+@media screen and (max-width: 1025px) {
+    .main-section-home{
+        &__content{
+            padding-top: 10px !important;
+        }   
+    }
+}
 
 @media screen and (max-width: 992px) {
     .header-content-wrapper{
@@ -120,6 +127,44 @@ header{
     }   
 }
 
+
+@media screen and (max-width: 769px) {
+    .card-title{
+        h2{
+            font-size: 32px !important;
+            line-height: 30px !important;
+            letter-spacing: -1px !important;
+            padding-bottom: 45px !important;
+        }
+        p{
+            font-size: 15px !important;
+            line-height: 17px !important;
+        }
+    }
+
+    .main-section-home{
+        &__img{
+            img{
+                width: 250px !important;
+            }
+        }
+        &__content{
+            padding-top: 10px !important;
+            .btn-main{
+                padding: 12px !important;
+                font-size: 14px !important;
+            }
+            .slogan-main-home{
+                h3{
+                    i{
+                        font-size: 30px !important;
+                    }
+            }
+        }   
+    }
+    }
+}
+
 @media screen and (max-width: 426px) {
     .header-content-wrapper{
         .logo{
@@ -131,4 +176,35 @@ header{
             }
         }
     }
+
+    .main-section-home{
+        padding-top: 30px !important;
+        display: block !important;
+        &__img{
+            display: block !important;
+            margin-bottom: 50px !important;
+            text-align: center;
+            img{
+                width: 250px !important;
+            }
+        }
+        &__content{
+            text-align: center;
+            padding-left: 0 !important;
+            padding-top: 10px !important;
+            .btn-main{
+                padding: 12px !important;
+                font-size: 14px !important;
+            }
+            .slogan-main-home{
+                margin: 0 auto 15px auto !important;
+                h3{
+                    i{
+                        font-size: 30px !important;
+                    }
+            }
+        }   
+    }
+    }
 }
+

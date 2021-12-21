@@ -5,7 +5,7 @@
     .discount-ads-card{
         border: 1px solid #ffbb004b;
         width: 575px;
-        height: 280px;
+        // height: 280px;
         border-radius: 11px;
         background-color: rgb(23, 23, 23);
         display: flex;
@@ -44,6 +44,48 @@
                 width: 100%;
                 &:hover{
                     animation: floatThings 2s linear infinite;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .discount-ads-cards{
+        display: block;
+        .discount-ads-card{
+            width: 100% !important;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+            .discount-ads-img{
+                img{
+                    width: 90% !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .discount-ads-cards{
+        display: block;
+        .discount-ads-card{
+            display: block !important;
+            width: 100% !important;
+            &:not(:last-child){
+                margin-bottom: 35px;
+            }
+            .discount-ads-description{
+                width: 100% !important;
+                padding: 20px !important;
+            }
+            .discount-ads-img{
+                width: 100% !important;
+                text-align: center;
+                padding: 20px !important;
+                img{
+                    width: 40% !important;
                 }
             }
         }

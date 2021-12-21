@@ -12,9 +12,6 @@
     &__description{
         width: 50%;
         margin-left: 20px;
-        p{
-
-        }
         .quality-slogan{
             width: 400px;
             display: flex;
@@ -30,6 +27,28 @@
                         color: #FFBA00;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .mini-information{
+        display: block !important;
+        padding: 30px !important;
+        &__img{
+            img{
+                border: 1px solid #FFBA00;
+                border-radius: 11px;
+            }
+            width: 100% !important;
+            margin-bottom: 25px !important;
+        }
+        &__description{
+            width: 100% !important;
+            .quality-slogan{
+                width: 200px !important;
+                display: block !important;
             }
         }
     }

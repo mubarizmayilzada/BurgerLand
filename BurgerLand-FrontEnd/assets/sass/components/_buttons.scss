@@ -10,3 +10,10 @@
         color: #000;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .btn-main{
+        padding: 12px !important;
+        font-size: 14px !important;
+    }
+}
