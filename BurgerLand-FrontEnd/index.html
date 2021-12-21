@@ -18,10 +18,23 @@
 </head>
 <body>
     <header>
-        <div class="container-custom header-content-wrapper">
+        <div class="container-fluid header-content-wrapper">
             <div class="logo"><p>BURGER</p><span>LAND</span></div>
-            <nav>
+            <nav class="desktop-menu">
                 <ul class="header-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile-menu">
+                <span class="burger-menu">
+                    <i class="fas fa-hamburger"></i>
+                </span>
+                <ul id="mobile-menu-list" class="hide">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Menu</a></li>
@@ -33,11 +46,9 @@
         </div>
     </header>
 
-
-    <main>
-
+<!-- <main>
         <section>
-            <div class="container-custom">
+            <div class="container">
                 <div class="main-section-home">
                     <div class="main-section-home__img">
                         <img src="./assets/uploads/images/burger1.png" alt="">
@@ -72,7 +83,7 @@
         </section>
 
         <section>
-            <div class="container-custom">
+            <div class="container">
                 <div class="mini-ads-cards">
                     <div class="mini-ads-card">
                         <div class="mini-ads-card__img">
@@ -116,7 +127,7 @@
 
 
         <section>
-            <div class="container-custom">
+            <div class="container">
                 <div class="discount-ads-cards">
                     <div class="discount-ads-card">
                         <div class="discount-ads-description">
@@ -148,7 +159,7 @@
 
 
         <section>
-            <div class="container-custom">
+            <div class="container">
                 <div class="mini-information">
                     <div class="mini-information__img">
                         <img src="./assets/uploads/images/homemade-beef-burger-caramelized-onion-bacon-and-beer-e1627971449244.jpg" alt="">
@@ -382,7 +393,7 @@
         </section>
 
         <section>
-            <div class="container-custom">
+            <div class="container">
                 <div class="mobile-app">
                     <div class="mobile-app__img">
                         <img src="./assets/uploads/images/food-Clay-01.jpg" alt="">
@@ -439,7 +450,7 @@
 
 
         <section class="customer-review-wrapper">
-            <div class="container-custom">
+            <div class="container">
                 <div class="customer-review">
                     <div class="section-title">
                         <h2>
@@ -515,7 +526,7 @@
 
 
         <section>
-            <div class="container-custom">
+            <div class="container">
                 <div class="news-overview">
                     <div class="section-title">
                         <h2>
@@ -589,7 +600,7 @@
         </section>
 
         <section class="subscribe">
-            <div class="container-custom">
+            <div class="container">
                 <div class="subscribe-wrapper">
                     <div class="subscribe-wrapper__slogan">
                         <h2>
@@ -606,10 +617,10 @@
                 </div>
             </div>
         </section>
-    </main>
+    </main> -->
 
-    <footer>
-        <div class="container-custom">
+    <!-- <footer>
+        <div class="container">
             <div class="footer">
                 <div class="footer__logo">
                     <a href="#"><div class="logo"><p>BURGER</p><span>LAND</span></div></a>
@@ -684,7 +695,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="./assets/js/filter.js"></script>
+    <script src="./assets/js/burger-menu.js"></script>
 </body>
 </html>

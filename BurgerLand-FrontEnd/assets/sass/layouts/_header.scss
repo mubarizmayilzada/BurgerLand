@@ -1,5 +1,6 @@
 .logo{
     letter-spacing: -2px;
+    white-space: nowrap;
     p{
         display: inline-block;
         font-weight: 700;
@@ -21,12 +22,13 @@ header{
     top: 0px;
     z-index: 9999;
     .header-content-wrapper{
+        position: relative;
 
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 100%;
-        nav{
+        .desktop-menu{
             color: white;
             font-size: 17px;
             font-weight: 400;
@@ -35,6 +37,7 @@ header{
                 list-style: none;
                 li{
                     a{
+                        white-space: nowrap;
                         &:hover,
                         &:focus,
                         &:active{
@@ -44,6 +47,87 @@ header{
                     margin-right: 25px;
                     margin-left: 25px;
                 }
+            }
+        }
+        .mobile-menu{
+            display: none;
+            .burger-menu{
+                margin-right: 10px;
+            }
+            .hide{
+                display: none;
+                right: -300px;
+            }
+            .show{
+                display: none;
+                right: 0;
+            }
+            ul{
+                width: 250px;
+                background-color: #FFBA00;
+                height: 100vh;
+                position: absolute;
+                z-index: 9999999999;
+                transition: all 1s ease;
+                display: none;
+                li{
+                    font-size: 18px;
+                    color: white;
+                    font-weight: 600;
+                    line-height: 45px;
+                    padding-left: 20px;
+                    width: 100%;
+                    transition: background-color .4s ease;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+                    &:hover{
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .header-content-wrapper{
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        .desktop-menu{
+            display: none;
+        }
+        .mobile-menu{
+            display: block !important;
+            .hide{
+                display: none;
+                right: -300px;
+            }
+            .show{
+                display: inline-block !important;
+                right: 0;
+            }
+            color: red;
+            .burger-menu{
+                display: block !important;
+                font-size: 30px;
+                color: #FFBA00;
+            }
+            ul{
+                display: block;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 426px) {
+    .header-content-wrapper{
+        .logo{
+            p{
+                font-size: 25px !important;
+            }
+            span{
+                font-size: 25px !important;
             }
         }
     }

@@ -85,7 +85,8 @@ li {
     transform: translateY(0px); } }
 
 .logo {
-  letter-spacing: -2px; }
+  letter-spacing: -2px;
+  white-space: nowrap; }
   .logo p {
     display: inline-block;
     font-weight: 700;
@@ -104,22 +105,83 @@ header {
   top: 0px;
   z-index: 9999; }
   header .header-content-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%; }
-    header .header-content-wrapper nav {
+    header .header-content-wrapper .desktop-menu {
       color: white;
       font-size: 17px;
       font-weight: 400; }
-      header .header-content-wrapper nav ul {
+      header .header-content-wrapper .desktop-menu ul {
         display: flex;
         list-style: none; }
-        header .header-content-wrapper nav ul li {
+        header .header-content-wrapper .desktop-menu ul li {
           margin-right: 25px;
           margin-left: 25px; }
-          header .header-content-wrapper nav ul li a:hover, header .header-content-wrapper nav ul li a:focus, header .header-content-wrapper nav ul li a:active {
-            color: #FFBA00; }
+          header .header-content-wrapper .desktop-menu ul li a {
+            white-space: nowrap; }
+            header .header-content-wrapper .desktop-menu ul li a:hover, header .header-content-wrapper .desktop-menu ul li a:focus, header .header-content-wrapper .desktop-menu ul li a:active {
+              color: #FFBA00; }
+    header .header-content-wrapper .mobile-menu {
+      display: none; }
+      header .header-content-wrapper .mobile-menu .burger-menu {
+        margin-right: 10px; }
+      header .header-content-wrapper .mobile-menu .hide {
+        display: none;
+        right: -300px; }
+      header .header-content-wrapper .mobile-menu .show {
+        display: none;
+        right: 0; }
+      header .header-content-wrapper .mobile-menu ul {
+        width: 250px;
+        background-color: #FFBA00;
+        height: 100vh;
+        position: absolute;
+        z-index: 9999999999;
+        transition: all 1s ease;
+        display: none; }
+        header .header-content-wrapper .mobile-menu ul li {
+          font-size: 18px;
+          color: white;
+          font-weight: 600;
+          line-height: 45px;
+          padding-left: 20px;
+          width: 100%;
+          transition: background-color .4s ease;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.377); }
+          header .header-content-wrapper .mobile-menu ul li:hover {
+            background-color: #000; }
+
+@media screen and (max-width: 992px) {
+  .header-content-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100% !important; }
+    .header-content-wrapper .desktop-menu {
+      display: none; }
+    .header-content-wrapper .mobile-menu {
+      display: block !important;
+      color: red; }
+      .header-content-wrapper .mobile-menu .hide {
+        display: none;
+        right: -300px; }
+      .header-content-wrapper .mobile-menu .show {
+        display: inline-block !important;
+        right: 0; }
+      .header-content-wrapper .mobile-menu .burger-menu {
+        display: block !important;
+        font-size: 30px;
+        color: #FFBA00; }
+      .header-content-wrapper .mobile-menu ul {
+        display: block; } }
+
+@media screen and (max-width: 426px) {
+  .header-content-wrapper .logo p {
+    font-size: 25px !important; }
+  .header-content-wrapper .logo span {
+    font-size: 25px !important; } }
 
 main .main-section-home {
   padding: 100px 0 100px 0;
@@ -208,7 +270,8 @@ main .main-section-home {
 
 .discount-ads-cards {
   margin: 120px 0;
-  display: flex; }
+  display: flex;
+  justify-content: space-evenly; }
   .discount-ads-cards .discount-ads-card {
     border: 1px solid #ffbb004b;
     width: 575px;
@@ -508,7 +571,7 @@ main .main-section-home {
     .subscribe .subscribe-wrapper form {
       width: 53%;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-evenly; }
       .subscribe .subscribe-wrapper form input {
         padding: 16px 0 16px 30px;
         width: 400px;
