@@ -1021,3 +1021,229 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.about-header {
+  width: 100%;
+  height: 500px;
+  position: relative; }
+  .about-header img {
+    width: 100%;
+    height: 100%; }
+  .about-header .about-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(180deg, #000000B3 0%, #000000 100%); }
+    .about-header .about-header-overlay .section-title {
+      padding-top: 120px;
+      padding-bottom: 120px; }
+
+.about-ceo .wrapper-about-ceo {
+  display: flex; }
+  .about-ceo .wrapper-about-ceo .img-wrapper-about-ceo {
+    padding-left: 50px;
+    margin-right: 20px; }
+    .about-ceo .wrapper-about-ceo .img-wrapper-about-ceo img {
+      width: 592px;
+      border-radius: 10px; }
+  .about-ceo .wrapper-about-ceo .about-ceo-decription {
+    margin-left: 20px;
+    padding-right: 50px; }
+    .about-ceo .wrapper-about-ceo .about-ceo-decription img {
+      width: 219px;
+      display: block; }
+    .about-ceo .wrapper-about-ceo .about-ceo-decription span {
+      color: white;
+      display: block;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 25px; }
+
+.counter-cards {
+  margin-top: 100px; }
+  .counter-cards .cards {
+    display: flex;
+    justify-content: space-around; }
+    .counter-cards .cards .card {
+      width: 333px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #171717;
+      position: relative; }
+      .counter-cards .cards .card .card-content {
+        text-align: center; }
+        .counter-cards .cards .card .card-content i {
+          font-size: 50px;
+          color: #FFBA00;
+          margin-bottom: 10px; }
+        .counter-cards .cards .card .card-content h2 {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 30px;
+          color: white;
+          margin-bottom: 10px; }
+        .counter-cards .cards .card .card-content span {
+          font-size: 16px;
+          font-weight: 400;
+          color: silver; }
+
+.our-chef {
+  margin-bottom: 100px; }
+  .our-chef .chef-cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around; }
+    .our-chef .chef-cards .chef-card {
+      border-radius: 10px;
+      width: 360px;
+      height: 505px;
+      position: relative; }
+      .our-chef .chef-cards .chef-card:hover .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.431); }
+      .our-chef .chef-cards .chef-card:hover span {
+        opacity: 1; }
+      .our-chef .chef-cards .chef-card:hover ul {
+        right: 20px;
+        opacity: 1; }
+      .our-chef .chef-cards .chef-card .overlay {
+        transition: background-color .5s ease; }
+      .our-chef .chef-cards .chef-card img {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%; }
+      .our-chef .chef-cards .chef-card span {
+        opacity: 0;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+        transition: opacity .5s ease; }
+      .our-chef .chef-cards .chef-card ul {
+        height: 100px;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        bottom: 55px;
+        transition: all .5s ease; }
+        .our-chef .chef-cards .chef-card ul li {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: #FFBA00; }
+          .our-chef .chef-cards .chef-card ul li:not(:last-child) {
+            margin-bottom: 10px; }
+          .our-chef .chef-cards .chef-card ul li i {
+            padding: 8px;
+            text-align: center;
+            font-size: 20px;
+            color: white; }
+
+@media screen and (max-width: 1025px) {
+  .about-ceo .wrapper-about-ceo {
+    padding: 50px;
+    padding-top: 0px;
+    display: block; }
+    .about-ceo .wrapper-about-ceo .img-wrapper-about-ceo {
+      margin: 0px;
+      padding: 30px; }
+      .about-ceo .wrapper-about-ceo .img-wrapper-about-ceo img {
+        width: 100%; }
+    .about-ceo .wrapper-about-ceo .about-ceo-decription {
+      margin: 0;
+      padding: 30px; }
+  .counter-cards {
+    margin: 100px 0; }
+    .counter-cards .cards {
+      display: block; }
+      .counter-cards .cards .card {
+        width: 100%; }
+        .counter-cards .cards .card:not(:last-child) {
+          margin-bottom: 15px; }
+  .our-chef .chef-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .our-chef .chef-cards .chef-card {
+      margin: 0 15px 30px 15px; } }
+
+@media screen and (max-width: 426px) {
+  .about-header {
+    height: 350px; }
+    .about-header .about-header-overlay .section-title {
+      padding: 50px 0; }
+  .about-ceo .wrapper-about-ceo .img-wrapper-about-ceo {
+    padding: 0; }
+  .about-ceo .wrapper-about-ceo .about-ceo-decription {
+    padding: 0; }
+  .our-chef .chef-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .our-chef .chef-cards .chef-card {
+      margin: 0;
+      margin-bottom: 30px; } }
+
+@media screen and (max-width: 321px) {
+  .about-ceo .wrapper-about-ceo .about-ceo-decription img {
+    width: 150px; } }
+
+.menu .discount-ads-cards {
+  margin-bottom: 0px; }
+
+.faqs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .faqs .faq {
+    width: 550px;
+    padding: 0 40px 40px 0;
+    margin-bottom: 20px; }
+    .faqs .faq div {
+      display: flex; }
+      .faqs .faq div h2 {
+        font-size: 22px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 20px; }
+      .faqs .faq div i {
+        color: #FFBA00;
+        font-size: 25px;
+        margin-right: 10px; }
+    .faqs .faq p {
+      margin-left: 40px;
+      font-size: 16px;
+      font-weight: 400;
+      color: silver; }
+
+@media screen and (max-width: 1024px) {
+  .faqs .faq {
+    width: 800px;
+    padding-right: 0; }
+    .faqs .faq p {
+      text-align: right; } }
+
+@media screen and (max-width: 426px) {
+  .faqs .faq div h2 {
+    font-size: 18px; }
+  .faqs .faq p {
+    text-align: left;
+    font-size: 14px; } }
+
+@media screen and (max-width: 321px) {
+  .faqs .faq div h2 {
+    font-size: 15px; }
+  .faqs .faq p {
+    text-align: left;
+    font-size: 13px; } }
