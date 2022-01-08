@@ -2,9 +2,16 @@
     width: 100%;
     height: 500px;
     position: relative;
-    img{
-        width: 100%;
-        height: 100%;
+    overflow: hidden;
+    .bg-image{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        img{
+            width: 100%;
+            height: 100%;
+            transform: scale(2);
+        }
     }
     .about-header-overlay{
         position: absolute;
