@@ -1,0 +1,172 @@
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    .get-closer{
+        .news-details-body-bottom{
+            border-bottom: none;
+            .share{
+                ul{
+                    li{
+                        &:last-child{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        width: 600px;
+        margin-right: 50px;
+        .contact-cards{
+            border-bottom: 3.5px solid rgb(50, 50,50);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .contact-card{
+                margin-bottom: 25px;
+                display: flex;
+                height: 80px;
+                width: 290px;
+                .icon{
+                    margin-right: 15px;
+                    position: relative;
+                    width: 80px;
+                    height: 80px;
+                    i{
+                        transition: padding,font-size .4s ease;
+                        border-radius: 8px;
+                        margin-top: 6px;
+                        padding: 20px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        color: #FFBA00;
+                        font-size: 40px;
+                        &:hover{
+                            background-color: #FFBA00;
+                            color: black;
+                            font-size: 32px;
+                            padding: 17px;
+                        }
+                    }
+                }
+                .content{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    h2{
+                        margin: 6px 0;
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: rgb(192, 192,192);
+                    }
+                }
+            }
+        }
+    }
+    .contact-form{
+        width: 500px;
+        h2{
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: 600;
+            color: white;
+        }
+        form{
+            .name-div,
+            .email-div,
+            .subject-div,
+            .comment-div{
+                margin-bottom: 25px;
+            }
+            label{
+                display: block;
+                color: white;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                span{
+                    color: #FFBA00;
+                }
+            }
+            input{
+                display: block;
+                width: 100%;
+                padding: 15px 25px;
+                border-radius: 5px;
+                background-color: rgb(32, 32,32);
+                border: none;
+                outline: none;
+                font-size: 16px;
+                color: #FFBA00;
+            }
+            textarea{
+                display: block;
+                width: 100%;
+                padding: 15px 25px;
+                border-radius: 5px;
+                background-color: rgb(32, 32,32);
+                border: none;
+                outline: none;
+                font-size: 16px;
+                color: #FFBA00;
+                resize: none;
+                height: 150px;
+            }
+        }
+    }
+}
+.contact-us-map{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 100px;
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+    .contact-us{
+        display: block;
+        .get-closer{
+            width: 100%;
+            margin-bottom: 100px;
+            .contact-cards{
+                .contact-card{
+                    width: 100%;
+                }
+            }
+            .news-details-body-bottom{
+                display: block;
+                text-align: center;
+                .tags{
+                    h3{
+                        margin: 0 auto;
+                    }
+                    width: 100%;
+                }
+                .share{
+                    width: 100%;
+                    margin-top: 15px;
+                    ul{
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        .contact-form{
+            width: 100%;
+            border-top: 3.5px solid rgb(50, 50,50);
+            padding-top: 25px;
+        }
+    }
+}
